@@ -30,7 +30,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 	the Layout.
 -->
 <core:BaseLayout xmlns:mx="http://www.adobe.com/2006/mxml"
-	xmlns:degrafa="http://www.degrafa.com/2007"
+	xmlns:degrafa="http://www.degrafa.com/2008"
 	xmlns:layouts="org.axiis.layouts.*"
 	xmlns:scale="org.axiis.layouts.scale.*"
 	xmlns:core="org.axiis.core.*" xmlns:utils="org.axiis.layouts.utils.*">

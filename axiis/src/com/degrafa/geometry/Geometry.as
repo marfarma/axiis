@@ -54,7 +54,6 @@ package com.degrafa.geometry{
 	import flash.utils.Dictionary;
 	
 	import mx.binding.utils.ChangeWatcher;
-	import mx.collections.ArrayCollection;
 	import mx.core.UIComponent;
 	import mx.events.FlexEvent;
 	import mx.events.PropertyChangeEvent;
@@ -763,7 +762,7 @@ package com.degrafa.geometry{
 	        {   
 				//we can't pass a reference to the requesting Geometry in the method signature with IFill - its required for transform inheritance by some fills
 				if (_fill is ITransformablePaint) (_fill as ITransformablePaint).requester = this;
-	        	_fill.begin(graphics, (rc) ? rc:null);	
+	        	_fill.begin(graphics, (rc) ? rc:null, new Point());	
 				CommandStack.currentFill = _fill;
 	        } else CommandStack.currentFill = null;
 	        

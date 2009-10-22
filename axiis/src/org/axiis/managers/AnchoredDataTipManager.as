@@ -5,7 +5,7 @@ package org.axiis.managers
 	import flash.events.MouseEvent;
 	import flash.geom.Point;
 	
-	import mx.core.ApplicationGlobals;
+	import mx.core.FlexGlobals;
 	import mx.core.UIComponent;
 	import mx.managers.ISystemManager;
 	
@@ -23,7 +23,7 @@ package org.axiis.managers
 		public function AnchoredDataTipManager()
 		{
 			super();
-			systemManager = ApplicationGlobals.application.systemManager as ISystemManager;
+			systemManager = FlexGlobals.topLevelApplication.systemManager as ISystemManager;
 		}
 		
 		/**
@@ -51,7 +51,7 @@ package org.axiis.managers
 			dataTip.x = anchorPoint.x;
 			dataTip.y = anchorPoint.y;
 			
-			systemManager.topLevelSystemManager.addChildToSandboxRoot("toolTipChildren", dataTip);
+			systemManager.topLevelSystemManager.toolTipChildren.addChild(dataTip);
 			
 			contexts.push(context);
 			this._dataTips.push(dataTip);
@@ -99,7 +99,7 @@ package org.axiis.managers
 				var dataTip:UIComponent = _dataTips.pop();
 				var axiisSprite:AxiisSprite = axiisSprites.pop();
 				context.graphics.clear();
-				systemManager.topLevelSystemManager.removeChildFromSandboxRoot("toolTipChildren", dataTip);
+				systemManager.topLevelSystemManager.toolTipChildren.removeChild(dataTip);
 
 				axiisSprite.removeEventListener(MouseEvent.MOUSE_OUT,handleMouseOut);
 				

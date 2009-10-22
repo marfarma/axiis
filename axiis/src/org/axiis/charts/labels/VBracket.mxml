@@ -28,7 +28,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 	A bracket that can be used to denote a group and label items that are laid
 	out vertically.
 -->
-<degrafa:RegularRectangle xmlns="*" xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:degrafa="http://www.degrafa.com/2007">
+<degrafa:RegularRectangle xmlns="*" xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:degrafa="http://www.degrafa.com/2008">
 	
 	<mx:Script>
 		<![CDATA[

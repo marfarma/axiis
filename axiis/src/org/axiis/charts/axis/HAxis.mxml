@@ -43,7 +43,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 <axis:AxisBase xmlns="*" 
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
 	xmlns:layouts="org.axiis.layouts.*" 
-	xmlns:degrafa="http://www.degrafa.com/2007" 
+	xmlns:degrafa="http://www.degrafa.com/2008" 
 	xmlns:scale="org.axiis.layouts.scale.*"
 	xmlns:utils="org.axiis.utils.*" 
 	itemPreDraw="onItemPreDraw();"

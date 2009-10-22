@@ -6,6 +6,7 @@ package  com.degrafa.decorators.axiis {
 	import com.degrafa.geometry.command.CommandStack;
 	
 	import flash.display.Graphics;
+	import flash.geom.Point;
 	import flash.geom.Rectangle;
 	
 	public class BaseLineAreaLineDecorator extends RenderDecoratorBase{
@@ -27,7 +28,7 @@ package  com.degrafa.decorators.axiis {
 			_commandStack=stack;
 			_currentFill=CommandStack.currentFill;
 			if (fillBounds) {
-				_currentFill.begin(CommandStack.currentContext,fillBounds);
+				_currentFill.begin(CommandStack.currentContext,fillBounds, new Point(0,0));
 				//trace("Decorator fill.y=" + fillBounds.y + " fill.height=" + fillBounds.height);	
 			}
 			if (CommandStack.currentStroke) {

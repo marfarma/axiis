@@ -5,7 +5,7 @@ package org.axiis.managers
 	import flash.events.MouseEvent;
 	import flash.geom.Point;
 	
-	import mx.core.ApplicationGlobals;
+	import mx.core.FlexGlobals;
 	import mx.core.UIComponent;
 	import mx.managers.ISystemManager;
 	
@@ -20,7 +20,7 @@ package org.axiis.managers
 		public function FreeDataTipManager()
 		{
 			super();
-			systemManager = ApplicationGlobals.application.systemManager as ISystemManager;
+			systemManager = FlexGlobals.topLevelApplication.systemManager as ISystemManager;
 		}
 		
 		/**
@@ -54,10 +54,10 @@ package org.axiis.managers
 			dataTip.x = point.x+3;
 			dataTip.y = point.y;
 			
-			if(context)
-				context.systemManager.addChildToSandboxRoot("toolTipChildren", dataTip);
+			if (context)
+				context.systemManager.toolTipChildren.addChild(dataTip);
 			else
-				systemManager.topLevelSystemManager.addChildToSandboxRoot("toolTipChildren", dataTip);
+				systemManager.topLevelSystemManager.toolTipChildren.addChild(dataTip);
 			
 			axiisSprite.addEventListener(MouseEvent.MOUSE_MOVE,handleMouseMove);
 			axiisSprite.addEventListener(MouseEvent.MOUSE_OUT,handleMouseOut);
@@ -103,7 +103,7 @@ package org.axiis.managers
 		{
 			if(context != null && dataTip != null && axiisSprite != null)
 			{
-				UIComponent(context).systemManager.removeChildFromSandboxRoot("toolTipChildren", dataTip);
+				UIComponent(context).systemManager.toolTipChildren.removeChild(dataTip);
 				axiisSprite.removeEventListener(MouseEvent.MOUSE_MOVE,handleMouseMove);
 				axiisSprite.removeEventListener(MouseEvent.MOUSE_OUT,handleMouseOut);
 				context = null;

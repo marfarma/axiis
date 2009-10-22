@@ -28,7 +28,7 @@
 	xmlns:axiis="http://www.axiis.org/2009"
 	xmlns:series="org.axiis.charts.series.*"
 	xmlns:groupings="org.axiis.charts.groupings.*"
-	xmlns:degrafa="http://www.degrafa.com/2007"
+	xmlns:degrafa="http://www.degrafa.com/2008"
 	xmlns:states="org.axiis.states.*"
 	xmlns:paint="org.axiis.paint.*"
 	xmlns:Examples="Examples.*"

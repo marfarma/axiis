@@ -33,7 +33,7 @@
 	applicationComplete="start()"
 	xmlns:axiis="http://www.axiis.org/2009"
 	xmlns:geometry="com.degrafa.geometry.*"
-	xmlns:degrafa="http://www.degrafa.com/2007" xmlns:Examples="Examples.*">
+	xmlns:degrafa="http://www.degrafa.com/2008" xmlns:Examples="Examples.*">
 
 	<mx:Script>
 		<![CDATA[

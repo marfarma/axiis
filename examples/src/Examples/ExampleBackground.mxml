@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mx:Canvas  xmlns:degrafa="http://www.degrafa.com/2007" xmlns:mx="http://www.adobe.com/2006/mxml" horizontalScrollPolicy="off" verticalScrollPolicy="off">
+<mx:Canvas  xmlns:degrafa="http://www.degrafa.com/2008" xmlns:mx="http://www.adobe.com/2006/mxml" horizontalScrollPolicy="off" verticalScrollPolicy="off">
 
 	<degrafa:GeometryComposition width="{this.width}" height="{this.height}" id="myGroup" graphicsTarget="{[this]}">
 		<degrafa:RegularRectangle width="{this.width}" height="{this.height}" id="myRect">

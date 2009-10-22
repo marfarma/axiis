@@ -27,7 +27,7 @@
 	 WedgeStackGroup renders a series of wedges along an arc. This is useful for creating radial visualizations, such pie charts.  
 -->
 <groupings:GroupingBase xmlns:mx="http://www.adobe.com/2006/mxml"
-						xmlns:degrafa="http://www.degrafa.com/2007"
+						xmlns:degrafa="http://www.degrafa.com/2008"
 						name="outerlayout"
 						xmlns:layouts="org.axiis.layouts.*"
 						xmlns:scale="org.axiis.layouts.scale.*"

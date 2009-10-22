@@ -34,7 +34,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 	</p>
 	
 -->
-<core:BaseLayout xmlns="*" xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:degrafa="http://www.degrafa.com/2007"
+<core:BaseLayout xmlns="*" xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:degrafa="http://www.degrafa.com/2008"
 	xmlns:core="org.axiis.core.*" xmlns:utils="org.axiis.layouts.utils.*"
 	 preRender="onPreRender();"
 	 itemPreDraw="onItemPreDraw();">

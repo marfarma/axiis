@@ -28,7 +28,7 @@
 <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
 	xmlns:axiis="http://www.axiis.org/2009"
 	xmlns:geometry="com.degrafa.geometry.*"
-	xmlns:degrafa="http://www.degrafa.com/2007"
+	xmlns:degrafa="http://www.degrafa.com/2008"
 	layout="absolute"
 	applicationComplete="application1_applicationCompleteHandler(event)" xmlns:Examples="Examples.*" viewSourceURL="srcview/index.html">
 
@@ -138,14 +138,14 @@
 									<degrafa:SolidFill id="wedgeFill" color="{browserColors[arcLayout.currentDatum.name]}"/>
 								</geometry:fill>
 							</geometry:Wedge>
-						</axiis:drawingGeometries>
+						</axiis:drawingGeometries><!--
 						<axiis:states>
 							<axiis:State enterStateEvent="mouseOver"
 								exitStateEvent="mouseOut"
 								targets="{[wedgeFill]}"
 								properties="{['color']}"
 								values="{[0xff00ff]}"/>
-						</axiis:states>
+						</axiis:states>-->
 					</axiis:BaseLayout>
 				</axiis:layouts>
 			</axiis:ConcentricWedgeLayout>
