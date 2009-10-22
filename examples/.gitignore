@@ -1,0 +1,12 @@
+# global
+*.log
+*.svn
+*.class
+*.vms
+*.DS_Store
+
+# bin
+bin-debug/*.swf
+bin-debug/data
+bin-debug/Examples
+bin-debug/styles
