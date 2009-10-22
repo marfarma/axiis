@@ -1,0 +1,15 @@
+This is a Github fork of the Axiis svn "googlecode":http://code.google.com/p/axiis/ repository:
+
+I will be using this in Flex 4 Projects.  It will stay in sync with the svn repository, and I will add things as necessary.
+
+I am also doing this with
+
+* "Flex SDK":http://github.com/viatropos/flex
+* "Degrafa":http://github.com/viatropos/degrafa
+* "Mate":http://github.com/viatropos/mate
+* "Away3D":http://github.com/viatropos/away3d
+* "Axiis":http://github.com/viatropos/axiis
+
+SVN is an old technology that makes it hard for passionate people who don't have the "privileges" to develop top open source projects.  Git removes that boundary.  So I've taken a few of the best Flex Library Projects and have made it so you can easily make your own modifications and customizations to them, while also keeping them in sync with the master branch.
+
+I will sync these projects with the master (googlecode) branch about once a week, unless there is a need to do it sooner.  The Flex SDK is a super pain to keep in sync, and just to deal with, so having it on github makes it soooo much easier.  Feel free to fork these and make pull requests.

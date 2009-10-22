@@ -1,0 +1,11 @@
+# global
+*.log
+*.svn
+*.class
+*.vms
+*.DS_Store
+
+# bin
+bin/axiis.swc
+docs/*
+examples/libs/*
